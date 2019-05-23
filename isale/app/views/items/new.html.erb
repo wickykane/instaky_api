@@ -1,0 +1,12 @@
+<h1>Add Post</h1>
+
+<%= form_for :post_form, items_path do |f| %>
+    <p>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </p>
+    <br>
+    <p>
+    <%= f.submit %>
+    </p>
+<% end %>
